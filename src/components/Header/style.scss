@@ -1,0 +1,40 @@
+@use 'src/styles/vars' as v;
+
+.header {
+  color: v.$color-light;
+  text-align: center;
+  background-color: v.$color-primary;
+  padding: v.$gutter * 2.5 0;
+  &__title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: v.$gutter;
+  }
+  &__base-amount {
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  // © alexandre
+  &__input {
+    width: 50%;
+    border: none;
+    color: v.$color-light;
+    background-color: v.$color-primary;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: right;
+    padding-right: .5rem;
+    &::placeholder {
+      color: v.$color-light;
+      text-align: center;
+    }
+  }
+  // © Nicolas
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+}

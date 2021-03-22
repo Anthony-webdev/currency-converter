@@ -1,0 +1,35 @@
+@use 'src/styles/vars' as v;
+
+.currencies {
+  background-color: v.$color-light;
+  color: v.$color-primary;
+  max-height: 40vh;
+  overflow: auto;
+  &__title {
+    padding: v.$gutter * 1.5 v.$gutter v.$gutter;
+    font-weight: 700;
+  }
+  &__input {
+    width: 100%;
+    padding: v.$gutter * 2 v.$gutter v.$gutter;
+    border: none;
+    color: v.$color-primary;
+    font-size: 1em;
+    font-weight: 700;
+
+    &::placeholder {
+      color: v.$color-alt;
+    }
+  }
+}
+
+.currency {
+  padding: v.$gutter / 1.5 v.$gutter;
+  border-top: 1px solid v.$color-alt;
+  cursor: pointer;
+  transition: background-color v.$transition-slow;
+  &:hover {
+    background-color: v.$color-alt;
+    transition: background-color v.$transition-fast;
+  }
+}

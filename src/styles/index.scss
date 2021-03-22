@@ -1,0 +1,21 @@
+// pour importer des fichiers SCSS on passe par @use
+// on peut omettre l'extension et l'underscore au début du nom du fichier
+@use 'reset';
+@use 'vars' as v;
+
+body {
+  font-family: 'Spartan', sans-serif;
+  background-color: v.$color-alt;
+}
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

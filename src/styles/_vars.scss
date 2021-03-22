@@ -1,0 +1,19 @@
+// 300 : textes
+// 500 : liste de devises
+// 700 : titre et résultat
+// Couleurs
+// Principale #bb5432
+// Alternative #f1c5b6
+// Claire #fff
+// Transitions
+// Rapide : 0.2s
+// Lente : 1s
+
+$color-primary: #bb5432;
+$color-alt: #f1c5b6;
+$color-light: white;
+
+$transition-slow: 1s;
+$transition-fast: .2s;
+
+$gutter: 1rem;
