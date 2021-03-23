@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 function Toggler({ onClickButton, isOpen }) {
-  // je prépare un handler pour gérer les clics sur le button
   const handleClick = () => {
     onClickButton();
   };
@@ -17,7 +16,6 @@ function Toggler({ onClickButton, isOpen }) {
       type="button"
       onClick={handleClick}
     >
-      {/* © Antoine */}
       +
     </button>
 

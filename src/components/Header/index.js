@@ -5,8 +5,6 @@ import './style.scss';
 
 function Header({ baseAmount, onChangeBaseAmount }) {
   const handleOnChange = (event) => {
-    // input number nous rertourne une valeur de type string
-    // il nous faut un number, donc on convertit
     const value = Number(event.target.value);
     onChangeBaseAmount(value);
   };

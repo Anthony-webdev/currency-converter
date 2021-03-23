@@ -1,8 +1,8 @@
 @use 'src/styles/vars' as v;
 
 .currencies {
-  background-color: v.$color-light;
-  color: v.$color-primary;
+  background-color: white;
+  color: rgb(36, 35, 35);
   max-height: 40vh;
   overflow: auto;
   &__title {

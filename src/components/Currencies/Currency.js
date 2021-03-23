@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 function Currency({ name, onClickCurrency }) {
   const handleOnClick = () => {
-    // ici on passe en argument la valeur de name
     onClickCurrency(name);
   };
 
